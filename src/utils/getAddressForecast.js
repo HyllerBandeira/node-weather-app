@@ -14,7 +14,7 @@ const getAddressForecast = (address, callback) => {
                         data: {
                             address: "The latitude and longitude from \'"+place_name+"\' is "+latitude+','+longitude,
                             summary_message: "Gonna be "+data.today.summary,
-                            degrees_message: "And it\'s currently "+data.degrees+" degrees out. There is a "
+                            degrees_message: "And it\'s currently "+data.degrees+" degrees out, with "+data.today.temperatureHigh+" high and "+data.today.temperatureLow+" low. There is a "
                                 +data.precip_probability*100+"% chance of rain",
                         }
                     })
