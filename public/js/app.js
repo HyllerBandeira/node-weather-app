@@ -1,5 +1,3 @@
-console.log("custom JS")
-
 const forecast_form = document.querySelector('form[id="forecast-form"]')
 const address_input = forecast_form.querySelector('input[name="address"]')
 const loading_message = document.querySelector('p[id="loading-message"]')
