@@ -2,7 +2,7 @@ const request = require("request")
 const util = require("./util.js")
 
 const getGeocode = (search, callback) => {
-    const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/"+encodeURIComponent(search)+".json?access_token="+util.api_keys.mapbox_key+"&limit=1"
+    const url = "https://api.mapbox.com/geocoding/v5/mapbox.places/"+encodeURIComponent(search)+".json?access_token="+process.env.MAPBOX_API_KEY+"&limit=1"
     
     request({
         url,

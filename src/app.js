@@ -11,7 +11,7 @@ const getAddressForecast = require("./utils/getAddressForecast.js")
 
 // express OBJ used to serve the application
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 
 // Paths to express config
 const public_directory = path.join(__dirname, "../public")
